@@ -2,11 +2,143 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Index_McDonalds</title>
+<link href="./css/common/reset.css" rel="stylesheet">
+
+<style type="text/css">
+	/* Header */
+	header {
+		width: 100%;
+		height: 141px;
+		background-color: red;
+		position: fixed;
+		top: 0px;
+		text-align: center;
+		border-bottom: 1px solid #ffbc0d;
+	}
+	
+	.h_menu {
+		float: left;
+	}
+	
+	#headarea {
+		width: 1168px;
+		height: 141px;
+		background-color: white;
+		margin: 0 auto;
+	}
+	
+	#headlogo {
+		width: 106px;
+		height: 107px;
+		padding: 14px 0;
+	}
+	
+	#headnav {
+		width: 1168px;
+		height: 36px;
+	}
+	
+	#headnav li {
+		float: left;
+		list-style: none;
+		
+	}
+	
+	/* Section */
+	#main_container {
+		width: 100%;
+		height: 1811px;
+		background-color: white;
+		margin: 0 auto;
+	}
+	
+	#main_pic {
+		width: 1920px;
+		height: 540px;
+		margin: 0 auto;
+		background-color: blue;
+	}
+	
+	#contArea {
+		width: 100%;
+		height: 1271px;
+		padding: 30px 0 60px;
+		background-color: yellow;
+	}
+	
+	.innerArea {
+		width: 1168px;
+		height: 1181px;
+		background-color: skyblue;
+		margin: 0 auto;
+	}
+	
+	.titleMain {
+		width: 1168px;
+		height: 40px;
+		margin: 0 0 60px;
+		background-color: white;
+		font-weight: 600;
+		line-height: 1;
+		
+	}
+	
+	/* Footer */
+	footer {
+		width: 100%;
+		height: 257px;
+		background-color: orange;
+	}
+	
+	#footarea {
+		width: 1168px;
+		height: 157px;
+		padding: 45px 0 55px;
+		text-align: left;
+		margin: 0 auto;
+		background-color: yellowgreen;
+	}
+	
+</style>
 </head>
 <body>
-
+	<!-- layout -->
+	<!-- Header -->
+	<header>
+		<div id="headarea">
+		
+			<strong id="headlogo" class="h_menu">
+				<img alt="" src="./images/common/Mc_logo.png">
+			</strong>
+			
+			<nav id="headnav" class="h_menu">
+				<ul>
+					<li>Menu</li>
+					<li>Store</li>
+					<li>What's New</li>
+					<li>Story</li>
+				</ul>
+			</nav>
+		
+		</div>
+	</header>
 	
+	<!-- Section -->
+	<section id="main_container">
+		<div id="main_pic"></div>
+		<div id="contArea">
+			<div class="innerArea">
+				<h2 class="titleMain">McDonald's LIVE</h2>
+			</div>
+		</div>
+		
+	</section>
+	
+	<!-- Footer -->
+	<footer>
+		<div id="footarea"></div>
+	</footer>
 	
 </body>
 </html>

@@ -10,10 +10,8 @@
 	header {
 		width: 100%;
 		height: 141px;
-		background-color: red;
 		position: fixed;
 		top: 0px;
-		text-align: center;
 		border-bottom: 1px solid #ffbc0d;
 	}
 	
@@ -30,19 +28,80 @@
 	
 	#headlogo {
 		width: 106px;
-		height: 107px;
-		padding: 14px 0;
+		height: 141px;
+		padding: 24px 0px;
+		box-sizing: border-box;
 	}
 	
 	#headnav {
-		width: 1168px;
-		height: 36px;
+		width: 684px;
+		height: 141px;
+		padding-left: 90px;
+		text-align: left;
 	}
 	
 	#headnav li {
 		float: left;
+		width: auto;
+		height: 141px;
 		list-style: none;
+	}
+	
+	#headnav a {
+		margin-right: 60px;
+		padding: 0 10px;
+		color: #292929;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 141px;
+		text-decoration: none;
+	}
+	
+	#headOption {
+		width: 228px;
+		height: 141px;
+		margin: 0 0 0 50px;
+		float: right;
+		line-height: 141px;
+	}
+	
+	#headOption li {
+		float: right;
+		width: auto;
+		height: 141px;
+		list-style: none;
+	}
 		
+	#headOption a {
+		color: white;
+		text-decoration: none;
+		font-size: 13px;
+		font-weight: 600;
+		border-radius: 25px;
+		border-width: 200px;
+		width: 80px;
+	}
+	
+	.recruit {
+		background: #ffbc0d;
+		margin-left: 10px;
+	}
+	
+	.eng {
+		background: #264a36;
+		margin-left: 5px;
+	}
+	
+	#headSearch {
+		width: 36px;
+		height: 141px;
+		padding: 52.5px 0;
+		margin: 0 26px;
+		float: right;
+	}
+	
+	.search {
+		float: right;
 	}
 	
 	/* Section */
@@ -50,21 +109,24 @@
 		width: 100%;
 		height: 1811px;
 		background-color: white;
+		margin: 141px auto 0;
+	}
+	
+	.autoSwiper {
+		max-width: 1900px;
 		margin: 0 auto;
 	}
 	
 	#main_pic {
-		width: 1920px;
+		width: 100%;
 		height: 540px;
-		margin: 0 auto;
-		background-color: blue;
+		text-align: center;
 	}
 	
 	#contArea {
 		width: 100%;
 		height: 1271px;
 		padding: 30px 0 60px;
-		background-color: yellow;
 	}
 	
 	.innerArea {
@@ -78,10 +140,10 @@
 		width: 1168px;
 		height: 40px;
 		margin: 0 0 60px;
-		background-color: white;
+		font-size: 40px;
 		font-weight: 600;
 		line-height: 1;
-		
+		color: #292929;
 	}
 	
 	/* Footer */
@@ -101,6 +163,7 @@
 	}
 	
 </style>
+
 </head>
 <body>
 	<!-- layout -->
@@ -108,31 +171,47 @@
 	<header>
 		<div id="headarea">
 		
-			<strong id="headlogo" class="h_menu">
+			<div id="headlogo" class="h_menu">
 				<img alt="" src="./images/common/Mc_logo.png">
-			</strong>
+			</div>
 			
 			<nav id="headnav" class="h_menu">
 				<ul>
-					<li>Menu</li>
-					<li>Store</li>
-					<li>What's New</li>
-					<li>Story</li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Store</a></li>
+					<li><a href="#">What's New</a></li>
+					<li><a href="#">Story</a></li>
 				</ul>
 			</nav>
+			
+			<div id="headSearch" class="search">
+				<img alt="" src="./images/common/Mc_search.png">
+			</div>
 		
+			<nav id="headOption">
+				<ul>
+					<li><a href="#" class="eng">ENG</a></li>
+					<li><a href="#" class="recruit">RECRUIT</a></li>
+				</ul>
+			</nav>
+			
 		</div>
 	</header>
 	
 	<!-- Section -->
 	<section id="main_container">
-		<div id="main_pic"></div>
-		<div id="contArea">
-			<div class="innerArea">
-				<h2 class="titleMain">McDonald's LIVE</h2>
+		<div class="autoSwiper">
+			<div id="main_pic" style="width: 1900px;">
+				<img alt="" src="./images/common/Mc_Main.png">
+			</div>
+			
+			<div id="contArea">
+				<div class="innerArea">
+					<h2 class="titleMain">McDonald's LIVE</h2>
+				</div>
 			</div>
 		</div>
-		
+			
 	</section>
 	
 	<!-- Footer -->

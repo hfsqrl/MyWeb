@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>Board Select</h1>
+	
+	<!-- List 클릭하면 boardList로 이동 -->
+	<!-- Update 클릭하면 boardUpdate로 이동 -->
+	<!-- Delete 클릭하면 boardDelete로 이동 -->
+	
+	<table border="1">
+		<thead>
+			<th>Subject 1</th>
+		</thead>
+		<tr>
+			<td> user01 </td>
+		</tr>
+		<tr>
+			<td> Today </td>
+		</tr>
+		<tbody>
+			<tr>
+				<td>
+					<textarea = rows="20" cols="50" readonly="readonly">Test Board. You can't write here. Bye
+					</textarea>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<form action="./boardList.html" method="post">
+		<input type="submit" value="List">
+	</form>
+	<form action="./boardUpdate.html" method="post">
+		<button>Update</button>
+	</form>
+	<form action="./boardDelete.html" method="post">
+		<input type="submit" value="Delete">
+	</form>
+	
+</body>
+</html>

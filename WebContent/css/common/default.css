@@ -2,23 +2,36 @@
 
 	/***************** Header ********************/
 	header {
+		display: block;
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
 		width: 100%;
 		height: 141px;
+		text-align: center;
 		background-color: white;
 		position: fixed;
-		top: 0px;
+		min-width: 1280px;
 		border-bottom: 1px solid #ffbc0d;
+	}
+	
+	a {
+		text-decoration: none;
 	}
 	
 	.h_menu {
 		float: left;
 	}
 	
-	#headarea {
+	#headarea, #footarea {
 		width: 1168px;
-		height: 140px;
-		background-color: white;
 		margin: 0 auto;
+		display: block;
+	}
+	
+	#headarea {
+		height: 100%;
 	}
 	
 	#headlogo {
@@ -28,75 +41,93 @@
 		box-sizing: border-box;
 	}
 	
-	#headnav {
-		width: 684px;
-		height: 141px;
-		padding-left: 90px;
-		text-align: left;
+	#headarea .nav_menu {
+		width: 1168px;
+		height: 100%;
+		padding: 52px 0px;
 	}
 	
-	#headnav li {
-		float: left;
+	.nav_menu .menu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
 		width: auto;
-		height: 141px;
-		list-style: none;
+		height: 140px;
+		text-align: center;
 	}
 	
-	#headnav a {
-		margin-right: 60px;
+	.nav_menu .menu .select {
+		display: inline-block;
+		padding-left: 60px;
+		text-align: left;
+		
+	}
+	
+	.nav_menu .menu .select>li {
+		float: left;
+	}
+	
+	.nav_menu .menu .select>li .sel1 {
+		width: 72px;
+		height: 130px;
+		position: relative;
+		margin-right: 85px;
 		padding: 0 10px;
 		color: #292929;
-		font-size: 19px;
+		font-size: 17px;
 		font-weight: 600;
-		line-height: 141px;
+		line-height: 140px;
 		text-decoration: none;
 	}
 	
-	#headOption {
+	.nav_menu .menu a {
+		display: inline-block;
+	}
+	
+	.nav_menu .headButton {
+		position: relative;
 		width: 228px;
-		height: 141px;
+		height: 36px;
 		margin: 0 0 0 50px;
 		float: right;
-		line-height: 141px;
 	}
-	
-	#headOption li {
-		float: right;
-		width: auto;
-		height: 141px;
-		list-style: none;
-	}
-		
-	#headOption a {
+			
+	.nav_menu .headButton .recruit {
+		display: inline-block;
+		width: 80px;
 		color: white;
-		text-decoration: none;
 		font-size: 13px;
 		font-weight: 600;
-		border-radius: 25px;
-		border-width: 200px;
-		width: 80px;
-	}
-	
-	.recruit {
+		line-height: 34px;
+		text-align: center;
+		border-radius: 48px;
 		background: #ffbc0d;
-		margin-left: 10px;
 	}
-	
-	.eng {
+		
+	.nav_menu .headButton .eng {
+		display: inline-block;
+		width: 80px;
+		color: white;
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 34px;
+		text-align: center;
+		border-radius: 48px;
 		background: #264a36;
-		margin-left: 5px;
 	}
 	
-	#headSearch {
+	.nav_menu .headButton .headSearch {
+		display: inline-block;
+		width: 62px;
+		height: 36px;
+		float: right;
+	}
+	
+	.nav_menu .headButton .headSearch .search {
 		width: 36px;
-		height: 141px;
-		padding: 52.5px 0;
-		margin: 0 26px;
-		float: right;
-	}
-	
-	.search {
-		float: right;
+		height: 36px;
+		margin-left: 26px;
 	}
 	
 		
@@ -104,15 +135,104 @@
 	footer {
 		width: 100%;
 		height: 257px;
-		background-color: orange;
+		background-color: #292929;
+		font-size: 14px;
+		line-height: 1.6;
+		text-align: center;
+		color: #fff;
 	}
 	
-	#footarea {
-		width: 1168px;
-		height: 157px;
+	footer #footarea {
+		height: 257px;
 		padding: 45px 0 55px;
 		text-align: left;
-		margin: 0 auto;
-		background-color: yellowgreen;
 	}
+	
+	ul, ol, li {
+		list-style: none outside;
+	}
+	
+	footer .infoLeft {
+		width: 190px;
+		height: 157px;
+		float: left;
+	}
+	
+	footer .infoLeft .privacy {
+		color: yellow;
+	}
+	
+	footer .infoMid {
+		width: 363px;
+		height: 130px;
+		float: left;
+		font-weight: 400;
+		opacity: 0.6;
+	}
+	
+	footer .infoMid .copyright {
+		margin-top: 5px;
+		width: 362px;
+		height: 22px;
+	}
+	
+	footer .sns {
+		width: 360px;
+		height: 56px;
+		float: right;
+	}
+	
+	footer .sns li {
+		float: left;
+		margin-left: 20px;
+	}
+	
+	footer .sns a {
+		display: block;
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		background: url("/MyWeb/images/common/ico_sns.png") 0 0 no-repeat;
+	}
+	
+	footer .sns a .fb {
+		background-position: 0 0;
+	}
+	
+	footer .sns a.ig {
+		background-position: 0 -40px;
+	}
+	
+	footer .sns a.yt {
+		background-position: 0 -80px;
+	}
+	
+	footer .sns a.ks {
+		background-position: 0 -120px;
+	}
+	
+	footer .sns .web_acc {
+		margin-top: 5px;
+	}
+	
+	footer .sns .web_acc a {
+		width: 100px;
+		height: 66px;
+		background: none;
+		text-indent: 0;
+	}
+	
+	footer .sns .web_acc a img {
+		width: 100%;
+	}
+	
+	img {
+		margin: 0;
+		padding: 0;
+		line-height: 0;
+		vertical-align: top;
+	}
+	
+	
+	
 	

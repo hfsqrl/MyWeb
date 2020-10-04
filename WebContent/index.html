@@ -43,15 +43,29 @@
 	<!-- Section -->
 	<section id="main_container">
 		<div class="content">
-			<div class="autoSwiper">
-				<div id="main_pic" style="width: 1900px;">
-					<img alt="" src="./images/common/Mc_Main.png">
+			<div class="mainEvent_swiper">
+			<!-- images for slideshow -->
+				<div class="mainPic fade">
+					<img src="./images/common/Mc_Main.png" style="width: 100%">
+				</div>
+				<div class="mainPic fade">
+					<img src="./images/common/Mc_Main2.png" style="width: 100%">
+				</div>
+				<div class="mainPic fade">
+					<img src="./images/common/Mc_Main3.png" style="width: 100%">
+				</div>
+				<div class="mainPic fade">
+					<img src="./images/common/Mc_Main4.png" style="width: 100%">
 				</div>
 				
-				<div id="contArea">
-					<div class="innerArea">
-						<h2 class="titleMain">McDonald's LIVE</h2>
-					</div>
+				<!-- next, prev buttons -->
+				<a class="prev" onclick="plusSlides(-1)"><img src="./images/common/bg_swiper.png"></a>
+				<a class="next" onclick="plusSlides(1)"><img src="./images/common/bg_swiper.png"></a>
+			</div>
+			
+			<div id="contArea">
+				<div class="innerArea">
+					<h2 class="titleMain">McDonald's LIVE</h2>
 				</div>
 			</div>
 		</div>	
@@ -89,6 +103,33 @@
 			</div>
 		</div>
 	</footer>
+
+<script type="text/javascript">
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	
+	// Next/previous controls
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	// Thumbnail image controls
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mainPic");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  
+	  slides[slideIndex-1].style.display = "block";
+	}
+</script>	
 	
 </body>
 </html>
